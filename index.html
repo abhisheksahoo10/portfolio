@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Sahoo</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        html{
+            scroll-behavior: smooth;
+        }
+        *{
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* header navbar */
+        header {
+            width: 100%;
+            background-color: #5FC0F3;
+        }
+        nav{
+            width: 100%;
+            padding: 20px;
+        }
+        nav ul {
+            display: flex;
+            justify-content:flex-end;
+        }
+        nav ul li{
+            margin-right: 30px;
+            list-style: none;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        section{
+            padding: 200px;
+        }
+        .line{
+            margin: 10px 0;
+            border-radius: 10px;
+            display: block;
+            height: 5px;
+            background:#5FC0F3 ;
+        }
+        /* home */
+        #home{
+            height:100vh;
+            display: flex;
+            justify-content: center;
+        }
+        .profile{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .profile .mydetail{
+            font-size: 2rem;
+            margin: 0 40px ;
+        }
+        .profile .mydetail #logo{
+            margin: 20px 0;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        
+        }
+        .profile .mydetail #logo button{
+            padding: 10px;
+            border-radius: 20px;
+            background: #d3f0ff;
+            margin-right: 20px;
+        }
+        .profile .mydetail #logo button:hover{
+            background: black;
+        }
+        .profile .mydetail  #logo button a{
+            text-decoration: none;
+            color: black;
+        }
+        .profile .mydetail #logo button a:hover{
+            color: white;
+        }
+        .profile .mydetail #logo a img{
+            width: 1.5rem;
+            height: auto;
+            margin: 0 20px;
+        }
+        .profile img{
+            clip-path: circle();
+            height: 20rem;
+            margin:0 40px;
+        }
+       
+        /* skills */
+        #skills h2{
+            margin: 0 ;
+            padding: 0;
+        }
+        #skills .skills-groups{
+            margin: 40px 0;
+        }
+        #skills .skills-groups div{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap:30px;
+        }
+        #skills .skills-groups div img{
+            background: #d3f0ff;
+            width: 100px;
+            height: auto;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        /* projects */
+        #projects .project1{
+            margin: 20px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #d3f0ff;
+            border-radius: 40px;
+            
+        }
+
+        .project1 h4{
+            font-size: 1.5rem;
+            padding: 20px;
+        }
+        .project1 img{
+            width: 50%;
+            padding: 10px 0;
+        }
+        .project1 button{
+            margin:10px 0 30px 0;
+            padding: 20px 80px;
+            border-radius: 40px;
+            background: #88d5ff;
+        }
+        .project1 button:hover{
+            background: #5FC0F3;
+        }
+        .project1 button a{
+            padding: 20px 100px;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+        }
+        /* about */
+        #about .contact-me {
+            margin: 30px 0;
+        }
+        #about .contact-me p{
+            font-size: 1rem;
+        }
+        #about .contact-me h4{
+            font-size: 2rem;
+        }
+        #about .contact-me .social{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(9,1fr);
+            gap: 5px;
+        }
+       
+        #about .contact-me .social a img{
+            height: 48px;
+            width: 48px;
+            padding: 10px;
+            background-color: #88d5ff;
+            border-radius: 40px;
+        }
+
+        @media (max-width:1231px){
+            nav ul {
+                justify-content: space-evenly;
+            }
+            .profile{
+                flex-direction: column-reverse;
+            }
+            #about .contact-me .social{
+                grid-template-columns: repeat(6,1fr);
+                gap: 5px;
+            }
+
+            
+        }
+
+    </style>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="profile">
+            <div class="mydetail">
+               <p>Hello,I'm
+                <h3>Abhishek Sahoo</h3>
+               </p>
+               <div id="logo">
+                    <button><a href="Abhishek sahoo res.pdf">Download CV</a></button>
+                    <a href="https://github.com/abhisheksahoo10"><img src="github.png" alt=""></a></button>
+                    <a href="https://www.linkedin.com/in/abhishek-sahoo-5080x/"><img src="linkedin.png" alt=""></a>
+               </div>
+            </div>
+            <img src="Abhishek Sahoo-01-01.jpeg" alt="">
+        </div>
+    </section>
+    <section id="skills">
+        <h2>SKILLS</h2>
+        <div class="line"></div>
+        <div class="skills-groups">
+            <div class="languages">
+                <img src="languages/C_Programming_Language.svg" alt="">
+                <img src="languages/icons8-java.svg" alt="">
+                <img src="languages/icons8-python.svg" alt="">
+                <img src="languages/icons8-html.svg" alt="">
+                <img src="languages/icons8-css.svg" alt="">
+                <img src="languages/icons8-javascript.svg" alt="">
+                <img src="languages/icons8-mysql.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h3>PROJECTS</h3>
+        <div class="line"></div>
+        <div class="project1">
+            <h4>Project : 1 </h4>
+            <img src="Frame-weather.png" alt="">
+            <button><a href="https://weather-app-by-abhishek10.netlify.app/">Visit App</a></button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h3>About</h3>
+        <div class="line"></div>
+        <footer>
+            <div class="contact-me">
+                <p>Get in touch
+                <h4>Contact Me</h4>
+                </p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/abhishek-sahoo-5080x/">
+                        <img src="social/icons8-in.svg" alt="">
+                    </a>
+                    <a href="https://github.com/abhisheksahoo10">
+                        <img src="social/icons8-github.svg" alt="">
+                    </a>
+                    <a href="mailto:abhisheksahoo2018@gmail.com">
+                        <img src="social/icons8-gmail.svg" alt="">
+                    </a>
+                    <a href="https://wa.me/+917735644585">
+                        <img src="social/icons8-whatsapp.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/abhishek.sibuly/">
+                        <img src="social/icons8-instagram.svg" alt="">
+                    </a>
+                    <a href="https://twitter.com/Abhishek_1240">
+                        <img src="social/Twitter X.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    
+</body>
+</html>
