@@ -16,7 +16,7 @@
          @keyframes fade{
             0%{
                 opacity: 0;
-                transform: translate(0,1rem);
+                transform: translate(0,0.5rem);
             }
             100%{
                 opacity: 1;
@@ -56,6 +56,7 @@
             text-decoration: none;
             color: black;
         }
+        /* section */
         section{
             padding: 200px;
             width: 100%;
@@ -109,8 +110,10 @@
         }
         .profile .mydetail #logo a img{
             width: 1.5rem;
+            /* padding: 2px; */
             height: auto;
             margin: 0 20px;
+            /* color: #d3f0ff; */
         }
         .profile img{
             clip-path: circle();
@@ -120,27 +123,46 @@
         }
        
         /* skills */
+        #skills{
+            height: 200vh;
+        }
         #skills h2{
             margin: 0 ;
             padding: 0;
+            letter-spacing: 0.5rem;
+        }
+        #skills h5{
+            margin: 5px 0;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
         }
         #skills .skills-groups{
             margin: 40px 0;
         }
-        #skills .skills-groups div{
+        #skills .skills-groups .skill{
             margin: 0 20px;
             display: grid;
             grid-template-columns: repeat(3,1fr);
-            grid-gap:30px;
+            gap:30px;
         }
-        #skills .skills-groups div img{
-            background: #d3f0ff;
+        #skills .skills-groups .catagories{
+            margin: 15px;
+            padding: 20px;
+            padding-bottom: 40px;
+            background: #edf9ff;
+            border-radius: 20px;
+        }
+        #skills .skills-groups .skill img{
+            background: #b8e7ff;
             width: 100px;
             height: auto;
             padding: 20px;
             border-radius: 20px;
         }
         /* projects */
+        #projects{
+            height: 200vh;
+        }
         #projects .project1{
             margin: 20px 20px;
             display: flex;
@@ -172,6 +194,10 @@
             font-family: 'Poppins', sans-serif;
         }
         /* about */
+        footer{
+            position: relative;
+            bottom: 0;
+        }
         #about .contact-me {
             margin: 30px 0;
         }
@@ -248,7 +274,10 @@
            }
             
         }
-        @media (min-width:700px){
+        @media (700px <= width) or (orentation:landscape){
+            #project .project1{
+                flex-direction: row;
+            }
             .project1 img{
                 width: 50%;
             }
@@ -285,14 +314,35 @@
         <h2>SKILLS</h2>
         <div class="line"></div>
         <div class="skills-groups">
-            <div class="languages">
-                <img src="languages/C_Programming_Language.svg" alt="">
-                <img src="languages/icons8-java.svg" alt="">
-                <img src="languages/icons8-python.svg" alt="">
-                <img src="languages/icons8-html.svg" alt="">
-                <img src="languages/icons8-css.svg" alt="">
-                <img src="languages/icons8-javascript.svg" alt="">
-                <img src="languages/icons8-mysql.svg" alt="">
+            <div class="catagories">
+                <H5>Programming Languages :</H5>
+                <div class="skill">
+                    <img src="languages/C_Programming_Language.svg" alt="">
+                    <img src="languages/icons8-java.svg" alt="">
+                    <img src="languages/icons8-python.svg" alt="">
+                </div>
+            </div>
+            <div class="catagories">
+                <H5>Web Development :</H5>
+                <div class="skill">
+                    <img src="languages/icons8-html.svg" alt="">
+                    <img src="languages/icons8-css.svg" alt="">
+                    <img src="languages/icons8-javascript.svg" alt="">
+                    <!-- <img src="languages/icons8-nodejs.svg" alt=""> -->
+                    <!-- <img src="languages/icons8-react.svg" alt=""> -->
+                </div>
+            </div>
+            <div class="catagories">
+                <H5>Database :</H5>
+                <div class="skill">
+                    <img src="languages/icons8-mysql.svg" alt="">
+                </div>
+            </div>
+            <div class="catagories">
+                <H5>Design Tools :</H5>
+                <div class="skill">
+                    <img src="languages/icons8-figma.svg" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -307,9 +357,9 @@
     </section>
 
     <section id="about">
+        <footer>
         <h3>About</h3>
         <div class="line"></div>
-        <footer>
             <div class="contact-me">
                 <p>Get in touch
                 <h4>Contact Me</h4>
