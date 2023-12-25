@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Abhishek 👨‍💻</title>
 </head>
+
 <body>
   <header class="hidden md:block text-white">
     <nav class="flex w-auto justify-around bg-slate-800">
@@ -14,7 +16,7 @@
         <h2 class="text-2xl font-bold">Abhishek</h2>
       </div>
       <ul class="flex justify-end items-center h-20 ">
-        <li class="text-xl px-3"><a href="#hero" >Profile</a></li>
+        <li class="text-xl px-3"><a href="#hero">Profile</a></li>
         <li class="text-xl px-3"><a href="#skill">Skill</a></li>
         <li class="text-xl px-3"><a href="#project">Project</a></li>
         <li class="text-xl px-3"><a href="#testimonial">Testimonial</a></li>
@@ -24,182 +26,195 @@
   </header>
   <header class="md:hidden bottom-0 w-full mb-3 fixed text-white  ">
     <nav class="flex justify-center mx-4 bg-gradient-to-b from-sky-900 to-purple-900 rounded-full">
-        <ul class="flex justify-center items-center h-16 text-sm sm:text-lg">
-            <li class=" px-2"><a href="#hero">Profile</a></li>
-            <li class=" px-2"><a href="#skill">Skill</a></li>
-            <li class=" px-2"><a href="#project">Project</a></li>
-            <li class=" px-2"><a href="#testimonial">Testimonial</a></li>
-            <li class=" px-2"><a href="#about">About</a></li>
-        </ul>
+      <ul class="flex justify-center items-center h-14 text-sm sm:text-lg">
+        <li class=" px-2"><a href="#hero">Profile</a></li>
+        <li class=" px-2"><a href="#skill">Skill</a></li>
+        <li class=" px-2"><a href="#project">Project</a></li>
+        <li class=" px-2"><a href="#testimonial">Testimonial</a></li>
+        <li class=" px-2"><a href="#about">About</a></li>
+      </ul>
     </nav>
- </header>
+  </header>
   <section id="hero" class="px-10 h-screen flex justify-center bg-zinc-900 text-white">
-      <div class="w-full flex flex-col lg:flex-row  justify-center items-center">
-          <div class="w-40 h-40 md:w-80 md:h-80 bg-gradient-to-b from-blue-600 via-purple-500 to-slate-600 p-6 overflow-hidden rounded-full">
-              <img src="profilenobg.png" alt="" class="relative mt-3"/>
-          </div>
-          <div class="m-3 md:m-10">
-              <h3 class="text-lg font-semibold">Hello , I'm</h3>
-              <h1 class="text-3xl md:text-6xl font-extrabold">Abhishek sahoo</h1>
-              <h3 class="text-xl font-bold">MCA student | Eager to learn | passion for technology </h3>
-              <div class="flex my-4  items-center">
-                  <a href="Abhishek sahoo Resume.pdf" class="">
-                      <button class="border-white rounded-full border-2 px-4 py-2 sm:px-5 sm:py-2 hover:bg-purple-800">Download CV</button>
-                  </a>
-                  <a href="https://github.com/abhisheksahoo10" class="ml-8">
-                      <img src="assets/github.png" alt="" class="invert w-8 h-8 sm:w-11 sm:h-11  border-white rounded-full border-2"/>
-                  </a>
-                  <a href="https://www.linkedin.com/in/abhishek-sahoo-5080x/" class="ml-8">
-                      <img src="assets/linkedin.png" alt="" class="invert w-8 h-8 sm:w-11 sm:h-11  border-white rounded-full border-2"/>
-                  </a>
-              </div>
-          </div>
+    <div class="w-full flex flex-col lg:flex-row  justify-center items-center">
+      <div
+        class="w-40 h-40 md:w-80 md:h-80 bg-gradient-to-b from-blue-600 via-purple-500 to-slate-600 p-6 overflow-hidden rounded-full">
+        <img src="profilenobg.png" alt="" class="relative mt-3" />
       </div>
+      <div class="m-3 md:m-10">
+        <h3 class="text-lg font-semibold">Hello , I'm</h3>
+        <h1 class="text-3xl md:text-6xl font-extrabold">Abhishek sahoo</h1>
+        <h3 class="text-xl font-bold">MCA student | Eager to learn | passion for technology </h3>
+        <div class="flex my-4  items-center">
+          <a href="Abhishek sahoo Resume.pdf" class="">
+            <button class="border-white rounded-full border-2 px-4 py-2 sm:px-5 sm:py-2 hover:bg-purple-800">Download
+              CV</button>
+          </a>
+          <a href="https://github.com/abhisheksahoo10" class="ml-8">
+            <img src="assets/github.png" alt=""
+              class="invert w-8 h-8 sm:w-11 sm:h-11  border-white rounded-full border-2" />
+          </a>
+          <a href="https://www.linkedin.com/in/abhishek-sahoo-5080x/" class="ml-8">
+            <img src="assets/linkedin.png" alt=""
+              class="invert w-8 h-8 sm:w-11 sm:h-11  border-white rounded-full border-2" />
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
   <section id="skill" class="px-10 h-screen bg-zinc-900 text-white">
-      <h2 class="text-2xl py-4 font-bold text-center">My Skills</h2>
-          <div class="bg-slate-800 p-5 sm:p-10 md:p-14 md:mx-10 lg:mx-40 lg:px-10 font-bold ">
-            <!-- <h2 class="text-2xl py-4 font-bold ">My Skills</h2>  -->
-              <p class=" mb-5 lg:my-8">
-                  Programming Languages : <br class='lg:hidden'/>
-                  <span class="font-normal ">C , Java, Python</span>
-              </p>
-              <p class=" mb-5 lg:my-8">
-                  Web Development : <br class='lg:hidden'/>
-                  <span class="font-normal ">HTML , CSS , JavaScript , Bootstrap , Tailwindcss , React</span>
-              </p>
-              <p class=" mb-5 lg:my-8">
-                  Database : <br class='lg:hidden'/>
-                  <span class="font-normal ">My SQL</span>
-              </p>
-              <p class=" mb-5 lg:my-8">
-                  Design Tools : <br class='lg:hidden'/>
-                  <span class="font-normal ">Figma</span>
-              </p>
-          </div>
-      </section>
-      <section id="project" class="px-10  bg-zinc-900 text-white">
-          <h2 class="text-2xl py-9 pb-4 font-bold text-center">My Projects</h2>
-          <div class='flex flex-wrap my-5 md:mx-5 justify-center'>
-            <!-- 1st project  -->
-            <div class="max-w-sm md:w-1/2 lg:w-1/3 m-2 md:m-5  overflow-hidden shadow-lg bg-zinc-800 ">
-              <img class="w-full h-56 object-cover" src="assets/Frame1.png" alt="Profile Image"/>
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Personal Portfolio</div>
-                <p class="text-slate-200 text-base">
-                  It was created using Just HTML and CSS | Minimal and responsive design
-                </p>
-              </div>
-              <div class="px-6 py-4 pb-6 flex justify-evenly">
-                <a href="https://abhisheksahoo10-portfolio.netlify.app/" class="bg-blue-900 hover:bg-blue-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-blue">
-                  Demo
-                </a>
-                <a href="https://github.com/abhisheksahoo10/portfolio" target="_blank" rel="noopener noreferrer" class="bg-green-900 hover:bg-green-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-gray">
-                  GitHub
-                </a>
-              </div>
-            </div>
-            <!-- 2nd project  -->
-            <div class="max-w-sm md:w-1/2 lg:w-1/3 m-2 md:m-5 overflow-hidden shadow-lg bg-zinc-800">
-              <img class="w-full h-56 object-cover" src="assets/Frame2.png" alt="Profile Image"/>
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Weather app</div>
-                <p class="text-slate-200 text-base">
-                  Using HTML , CSS and JS uses an API by openweathermap.org
-                </p>
-              </div>
-              <div class="px-6 py-4 pb-6 flex justify-evenly">
-                <a href="https://weather-app-by-abhishek10.netlify.app/" class="bg-blue-900 hover:bg-blue-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-blue">
-                  Demo
-                </a>
-                <a href="https://github.com/abhisheksahoo10/Websites" target="_blank" rel="noopener noreferrer" class="bg-green-900 hover:bg-green-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-gray">
-                  GitHub
-                </a>
-              </div>
-            </div>
-            <!-- 3nd project  -->
-            <div class="max-w-sm md:w-1/2 lg:w-1/3  m-2 md:m-5 overflow-hidden shadow-lg bg-zinc-800">
-              <img class="w-full h-56 object-cover" src="assets/Frame3.png" alt="Profile Image"/>
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">Tic-Tac-Toe</div>
-                <p class="text-slate-200 text-base">
-                  Created using Java , Java Swing . Not much features available
-                </p>
-              </div>
-              <div class="px-6 py-4 pb-6 flex justify-evenly">
-                <!-- <a href="" class="bg-blue-900 hover:bg-blue-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-blue">
+    <h2 class="text-2xl py-4 font-bold text-center">My Skills</h2>
+    <div class="bg-slate-800 p-5 sm:p-10 md:p-14 md:mx-10 lg:mx-40 lg:px-10 font-bold ">
+      <!-- <h2 class="text-2xl py-4 font-bold ">My Skills</h2>  -->
+      <p class=" mb-5 lg:my-8">
+        Programming Languages : <br class='lg:hidden' />
+        <span class="font-normal ">C , Java, Python</span>
+      </p>
+      <p class=" mb-5 lg:my-8">
+        Web Development : <br class='lg:hidden' />
+        <span class="font-normal ">HTML , CSS , JavaScript , Bootstrap , Tailwindcss , React</span>
+      </p>
+      <p class=" mb-5 lg:my-8">
+        Database : <br class='lg:hidden' />
+        <span class="font-normal ">My SQL</span>
+      </p>
+      <p class=" mb-5 lg:my-8">
+        Design Tools : <br class='lg:hidden' />
+        <span class="font-normal ">Figma</span>
+      </p>
+    </div>
+  </section>
+  <section id="project" class="px-10  bg-zinc-900 text-white">
+    <h2 class="text-2xl py-9 pb-4 font-bold text-center">My Projects</h2>
+    <div class='flex flex-wrap my-5 md:mx-5 justify-center'>
+      <!-- 1st project  -->
+      <div class="max-w-sm md:w-1/2 lg:w-1/3 m-2 md:m-5  overflow-hidden shadow-lg bg-zinc-800 ">
+        <img class="w-full h-56 object-cover" src="assets/Frame1.png" alt="Profile Image" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Personal Portfolio</div>
+          <p class="text-slate-200 text-base">
+            It was created using Just HTML and CSS | Minimal and responsive design
+          </p>
+        </div>
+        <div class="px-6 py-4 pb-6 flex justify-evenly">
+          <a href="https://abhisheksahoo10-portfolio.netlify.app/"
+            class="bg-blue-900 hover:bg-blue-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-blue">
+            Demo
+          </a>
+          <a href="https://github.com/abhisheksahoo10/portfolio" target="_blank" rel="noopener noreferrer"
+            class="bg-green-900 hover:bg-green-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-gray">
+            GitHub
+          </a>
+        </div>
+      </div>
+      <!-- 2nd project  -->
+      <div class="max-w-sm md:w-1/2 lg:w-1/3 m-2 md:m-5 overflow-hidden shadow-lg bg-zinc-800">
+        <img class="w-full h-56 object-cover" src="assets/Frame2.png" alt="Profile Image" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Weather app</div>
+          <p class="text-slate-200 text-base">
+            Using HTML , CSS and JS uses an API by openweathermap.org
+          </p>
+        </div>
+        <div class="px-6 py-4 pb-6 flex justify-evenly">
+          <a href="https://weather-app-by-abhishek10.netlify.app/"
+            class="bg-blue-900 hover:bg-blue-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-blue">
+            Demo
+          </a>
+          <a href="https://github.com/abhisheksahoo10/Websites" target="_blank" rel="noopener noreferrer"
+            class="bg-green-900 hover:bg-green-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-gray">
+            GitHub
+          </a>
+        </div>
+      </div>
+      <!-- 3nd project  -->
+      <div class="max-w-sm md:w-1/2 lg:w-1/3  m-2 md:m-5 overflow-hidden shadow-lg bg-zinc-800">
+        <img class="w-full h-56 object-cover" src="assets/Frame3.png" alt="Profile Image" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Tic-Tac-Toe</div>
+          <p class="text-slate-200 text-base">
+            Created using Java , Java Swing . Not much features available
+          </p>
+        </div>
+        <div class="px-6 py-4 pb-6 flex justify-evenly">
+          <!-- <a href="" class="bg-blue-900 hover:bg-blue-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-blue">
                   Demo
                 </a>  -->
-                <a href="https://github.com/abhisheksahoo10/java" target="_blank" rel="noopener noreferrer" class="bg-green-900 hover:bg-green-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-gray">
-                  GitHub
-                </a>
-              </div>
+          <a href="https://github.com/abhisheksahoo10/java" target="_blank" rel="noopener noreferrer"
+            class="bg-green-900 hover:bg-green-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-gray">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class='p-10'></div>
+  </section>
+  <section id="testimonial" class="px-10 h-screen  bg-zinc-900 text-white">
+    <h2 class="text-2xl py-9 pb-4 font-bold text-center"></h2>
+    <h2 class="text-2xl font-semibold text-gray-100 mb-6 text-center">Student Testimonial</h2>
+    <div class="bg-gray-800 p-4 md:py-16 lg:mx-20">
+      <div class="container mx-auto">
+        <div class="max-w-2xl mx-auto text-center">
+          <p class="text-gray-200 mb-8 mx-1 text-sm sm:text-base">
+            "As an MCA student, I am truly passionate about technology and have an insatiable eagerness to learn. The
+            dynamic world of computer applications has fueled my curiosity, and I find joy in exploring new
+            technologies, solving problems, and staying up-to-date with industry trends. My journey in the MCA program
+            has not only equipped me with technical skills but has also nurtured my love for innovation and the
+            ever-evolving field of technology."
+          </p>
+          <div class="flex items-center justify-center ">
+            <img class="w-12 h-12 rounded-full object-cover sm:mr-4" src="assets/pic.jpeg" alt="Student Avatar" />
+            <div class="px-2 sm:px-0 ">
+              <p class="text-lg font-semibold text-gray-100 text-left">Abhishek Sahoo</p>
+              <p class="text-sm text-gray-200 text-left">MCA Student</p>
             </div>
           </div>
-          <div class='p-10'></div>
-          </section>
-          <section id="testimonial" class="px-10 h-screen  bg-zinc-900 text-white">
-              <h2 class="text-2xl py-9 pb-4 font-bold text-center"></h2>
-              <div class="bg-gray-800 py-16">
-                <div class="container mx-auto">
-                  <div class="max-w-2xl mx-auto text-center">
-                    <h2 class="text-3xl font-semibold text-gray-100 mb-6">Student Testimonial</h2>
-                    <p class="text-gray-200 mb-8 mx-1 text-sm sm:text-base">
-                      "As an MCA student, I am truly passionate about technology and have an insatiable eagerness to learn. The dynamic world of computer applications has fueled my curiosity, and I find joy in exploring new technologies, solving problems, and staying up-to-date with industry trends. My journey in the MCA program has not only equipped me with technical skills but has also nurtured my love for innovation and the ever-evolving field of technology."
-                    </p>
-                    <div class="flex flex-col sm:flex-row items-center justify-center ">
-                      <img
-                        class="w-12 h-12 rounded-full object-cover sm:mr-4" src="assets/pic.jpeg" alt="Student Avatar"/>
-                      <div>
-                        <p class="text-lg font-semibold text-gray-100 text-left">Abhishek Sahoo</p>
-                        <p class="text-sm text-gray-200 text-left">MCA Student</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              </section>
-              <section id="about" class="px-10 h-screen bg-black text-white">
-                  <h2 class="text-2xl py-9 pb-4 font-bold text-left">About Me</h2>
-                  <hr/>
-                    <div class='my-4'>
-                      <div >
-                        <h3 class=''>Get in touch<br/>
-                        <span class='text-4xl font-semibold'>Contact Me</span>
-                        </h3>
-                        <div class='flex my-4'>
-                          <a href="https://www.linkedin.com/in/abhishek-sahoo-5080x/" class="p-1 sm:p-2 mr-3 bg-gray-700 rounded-lg">
-                            <img src="assets/in.svg" alt="" class="w-8 h-8 sm:w-10 sm:h-10 "/>
-                          </a>
-                          <a href="mailto:abhisheksahoo2018@gmail.com" class="p-1 sm:p-2 mr-3 bg-gray-700 rounded-lg">
-                            <img src="assets/gmail.svg" alt="" class="w-8 h-8 sm:w-10 sm:h-10 "/>
-                          </a>
-                          <a href="https://wa.me/+917735644585" class="p-1 sm:p-2 mr-3 bg-gray-700 rounded-lg">
-                            <img src="assets/whatsapp.svg" alt="" class="w-8 h-8 sm:w-10 sm:h-10 "/>
-                          </a>
-                          <a href="https://www.instagram.com/abhishek.sibuly/" class="p-1 sm:p-2 mr-3 bg-gray-700 rounded-lg">
-                            <img src="assets/instagram.svg" alt="" class="w-8 h-8 sm:w-10 sm:h-10 "/>
-                          </a>
-                          <a href="https://twitter.com/Abhishek_1240" class="p-1 sm:p-2 mr-3 bg-gray-700 rounded-lg">
-                            <img src="assets/Twitter X.svg" alt="" class="invert w-8 h-8 sm:w-10 sm:h-10 "/>
-                          </a>
-                        </div>
-                      </div>
-              
-                    </div>
-                  </section>
-    <script>
-      const links = document.querySelectorAll('a[href^="#"]');
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="px-10 h-screen bg-black text-white">
+    <h2 class="text-2xl py-9 pb-4 font-bold text-left">About Me</h2>
+    <hr />
+    <div class='my-4 '>
+      <div class="">
+        <h3 class=''>Get in touch<br />
+          <span class='text-4xl font-semibold'>Contact Me</span>
+        </h3>
+        <div class='flex my-4'>
+          <a href="https://www.linkedin.com/in/abhishek-sahoo-5080x/" class="p-1 sm:p-2 mr-3 bg-gray-700 rounded-lg">
+            <img src="assets/in.svg" alt="" class="w-8 h-8 sm:w-10 sm:h-10 " />
+          </a>
+          <a href="mailto:abhisheksahoo2018@gmail.com" class="p-1 sm:p-2 mr-3 bg-gray-700 rounded-lg">
+            <img src="assets/gmail.svg" alt="" class="w-8 h-8 sm:w-10 sm:h-10 " />
+          </a>
+          <a href="https://wa.me/+917735644585" class="p-1 sm:p-2 mr-3 bg-gray-700 rounded-lg">
+            <img src="assets/whatsapp.svg" alt="" class="w-8 h-8 sm:w-10 sm:h-10 " />
+          </a>
+          <a href="https://www.instagram.com/abhishek.sibuly/" class="p-1 sm:p-2 mr-3 bg-gray-700 rounded-lg">
+            <img src="assets/instagram.svg" alt="" class="w-8 h-8 sm:w-10 sm:h-10 " />
+          </a>
+          <a href="https://twitter.com/Abhishek_1240" class="p-1 sm:p-2 mr-3 bg-gray-700 rounded-lg">
+            <img src="assets/Twitter X.svg" alt="" class="invert w-8 h-8 sm:w-10 sm:h-10 " />
+          </a>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </section>
+  <script>
+    const links = document.querySelectorAll('a[href^="#"]');
 
-      links.forEach(link => {
-        link.addEventListener('click', function (e) {
-          e.preventDefault();
-          const targetId = this.getAttribute('href');
-          const targetElement = document.querySelector(targetId);
-          targetElement.scrollIntoView({ behavior: 'smooth' });
-        });
+    links.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        targetElement.scrollIntoView({ behavior: 'smooth' });
       });
+    });
 
-    </script>
+  </script>
 </body>
+
 </html>
