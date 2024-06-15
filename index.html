@@ -1,263 +1,371 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="web-icon.png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Abhishek 👨‍💻</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Abhishek</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="hidden md:block text-white">
-    <nav class="flex w-auto justify-around bg-slate-800">
-      <div class="flex items-center">
-        <a href="https://abhisheksahoo.vercel.app/" class="text-2xl font-bold">Abhishek</a>
+  <nav>
+    <div class="nav__bar">
+      <a href="#"><img class="logo nav__logo" src="/assets/icon.svg"></img>
+        <p>Abhishek</p>
+      </a>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-3-line"></i>
       </div>
-      <ul class="flex justify-end items-center h-20 ">
-        <li class="text-xl px-3"><a href="#hero">Profile</a></li>
-        <li class="text-xl px-3"><a href="#skill">Skill</a></li>
-        <li class="text-xl px-3"><a href="#project">Project</a></li>
-        <!-- <li class="text-xl px-3"><a href="#testimonial">Testimonial</a></li> -->
-        <li class="text-xl px-3"><a href="#about">About</a></li>
-      </ul>
-    </nav>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skill</a></li>
+      <li><a href="#service">Service</a></li>
+      <li><a href="#project">projects</a></li>
+      <li><a href="#contact" class="btn">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn__large">Contact</a>
+  </nav>
+  <header class="section__container header__container" id="home">
+    <div class="header__image">
+      <img src="illustration.jpeg" alt="profile" />
+    </div>
+    <div class="header__content">
+      <div>
+        <h1>Abhishek</h1>
+        <h2>Software Developer</h2>
+      </div>
+      <p class="section__description">
+        Web developer proficient in React, Node.js, and PHP,
+        with a passion for building dynamic, scalable applications.
+        Dedicated to continuous learning and improvement.
+      </p>
+      <div class="header__btn">
+        <a href=""  class="btn">Download CV</a>
+        <a href="mailto:abhisheksahoo2018@gmail.com"  class="btn" style="margin-left: 5px;">Hire Me</a>
+      </div>
+    </div>
   </header>
-  <header class="md:hidden bottom-0 w-full mb-3 fixed text-white  ">
-    <nav class="flex justify-center mx-4 bg-gradient-to-b from-sky-900 to-purple-900 rounded-full">
-      <ul class="flex justify-center items-center h-16 text-sm sm:text-lg">
-        <li class=" px-2"><a href="#hero">Profile</a></li>
-        <li class=" px-2"><a href="#skill">Skill</a></li>
-        <li class=" px-2"><a href="#project">Project</a></li>
-        <!-- <li class=" px-2"><a href="#testimonial">Testimonial</a></li> -->
-        <li class=" px-2"><a href="#about">About</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section id="hero" class="px-10 h-screen flex justify-center bg-zinc-900 text-white">
-    <div class="w-full flex flex-col lg:flex-row  justify-center items-center">
-      <div
-        class="w-40 h-40 md:w-80 md:h-80 bg-gradient-to-b from-blue-600 via-purple-500 to-slate-600 p-6 overflow-hidden rounded-full">
-        <img src="profilenobg.png" alt="" class="relative mt-3" />
-      </div>
-      <div class="m-3 md:m-10">
-        <h3 class="text-lg font-semibold text-gray-100">Hello , I'm</h3>
-        <h1 class="text-3xl md:text-6xl font-extrabold">Abhishek sahoo</h1>
-        <h3 class="text-xl font-bold text-gray-300">Web Dev | Eager to Learn & Contribute | Exploring emerging technologies </h3>
-        <div class="flex my-4  items-center">
-          <a href="https://abhisheksahoo.vercel.app" class="">
-            <button class="border-white rounded-full border-2 px-2 py-0.5 sm:px-5 sm:py-2 hover:bg-purple-800">
-              Go to React-Portfolio
-            </button>
-          </a>
-          <a href="https://github.com/abhisheksahoo10" class="ml-8">
-            <img src="assets/github.png" alt=""
-              class="invert w-6 h-6 sm:w-11 sm:h-11  border-white rounded-full border-2" />
-          </a>
-          <a href="https://www.linkedin.com/in/abhishek-sahoo-5080x/" class="ml-8">
-            <img src="assets/linkedin.png" alt=""
-              class="invert w-6 h-6 sm:w-11 sm:h-11  border-white rounded-full border-2" />
-          </a>
-        </div>
+
+  <section class="section__container about__container" id="about">
+    <div class="about__image">
+      <img src="assets/bg.png" alt="bg" class="about__bg-1" />
+      <img src="assets/bg.png" alt="bg" class="about__bg-2" />
+      <img src="avatar.png" alt="about" class="about__img" />
+    </div>
+    <div class="about__content">
+      <h2 class="section__header">About Me</h2>
+      <p class="section__description">
+        A passionate developer with a knack for turning ideas into reality using React, Node.js, PHP, and SQL. 🖥️✨ 
+        Master of problem-solving and fluent in tech-speak, 
+        I learn new tools faster than a caffeinated squirrel. 🐿️💻 
+        Always on a quest for knowledge and the latest tech trends! 🚀📚
+      </p>
+      <div class="about__btn">
+        <a href="#contact" class="btn">Contact Me</a>
       </div>
     </div>
-    
   </section>
-  
-  <section id="skill" class="px-10 h-screen bg-zinc-900 text-white">
-    <h2 class="text-2xl py-4 font-bold text-center">My Skills</h2>
-    <div class="bg-slate-800 p-5 sm:p-10 md:p-14 md:mx-10 lg:mx-40 lg:px-10 font-bold ">
-      <!-- <h2 class="text-2xl py-4 font-bold ">My Skills</h2>  -->
-      <p class=" mb-5 lg:my-8">
-        Web technologies : <br class='lg:hidden' />
-        <span class="font-normal ">React JS, Node JS, PHP, JavaScript </span>
-      </p>
-      <p class=" mb-5 lg:my-8">
-        Programming Languages : <br class='lg:hidden' />
-        <span class="font-normal ">Java, Python, C Programming</span>
-      </p>
-      <p class=" mb-5 lg:my-8">
-        Database : <br class='lg:hidden' />
-        <span class="font-normal ">MySQL, MongoDB</span>
-      </p>
-      <p class=" mb-5 lg:my-8">
-        Design Tools : <br class='lg:hidden' />
-        <span class="font-normal ">TailwindCSS, Figma</span>
-      </p>
+
+  <section class="section__container service__container" id="service">
+    <h2 class="section__header">Services</h2>
+    <div class="service__grid">
+      <div class="service__card">
+        <span><i class="ri-window-fill"></i></span>
+        <h4>Website Design</h4>
+        <p>
+          Elegantly crafting digital experiences that seamlessly blend aesthetics with functionality.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-store-line"></i></span>
+        <h4>Backend Solutions</h4>
+        <p>
+          Architecting robust and scalable backend solutions that power seamless digital experiences.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-macbook-line"></i></span>
+        <h4>Full Stack</h4>
+        <p>
+          Crafting seamless digital solutions from frontend elegance to backend robustness, ensuring exceptional UX.
+        </p>
+      </div>
     </div>
   </section>
-  <section id="project" class="px-10  bg-zinc-900 text-white">
-    <h2 class="text-2xl py-9 pb-4 font-bold text-center">Projects</h2>
-    <!-- Project 1 -->
-    <div class='flex flex-wrap my-5 md:mx-5 justify-center'>
-      <div class="max-w-sm md:w-1/2 lg:w-1/3 m-2 md:m-5  overflow-hidden shadow-lg bg-zinc-800 ">
-        <img class="w-full h-56 object-cover" src="assets/React-portfolio.png" alt="Profile Image" />
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">React PortFolio</div>
-          <p class="text-slate-200 text-base">
-             Technologies used : React JS, Tailwind CSS, Framer Motion
-          </p>
-        </div>
-        <div class="px-6 py-4 pb-6 flex justify-evenly">
-          <a href="https://abhisheksahoo.vercel.app"
-            class="bg-sky-500 hover:bg-blue-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-blue">
-            Goto
-          </a>
-          <!-- <a href="https://github.com/abhisheksahoo10" target="_blank" rel="noopener noreferrer"
-            class="bg-green-900 hover:bg-green-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-gray">
-            GitHub
-          </a> -->
-        </div>
-      </div>
-      <!-- 1st project  -->
-      <div class="max-w-sm md:w-1/2 lg:w-1/3 m-2 md:m-5  overflow-hidden shadow-lg bg-zinc-800 ">
-        <img class="w-full h-56 object-cover" src="assets/Frame5.png" alt="Profile Image" />
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">Virtual Healthcare</div>
-          <p class="text-slate-200 text-base">
-            A FullStack application designed to schedule appointments with hospital management!
-          </p>
-        </div>
-        <div class="px-6 py-4 pb-6 flex justify-evenly">
-          <!-- <a href=""
-            class="bg-blue-900 hover:bg-blue-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-blue">
-            Demo
-          </a> -->
-          <a href="https://github.com/abhisheksahoo10/Virtual-HealthCare" target="_blank" rel="noopener noreferrer"
-            class="bg-green-900 hover:bg-green-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-gray">
-            GitHub
-          </a>
-        </div>
-      </div>
-      <!-- 2nd project  -->
-      <div class="max-w-sm md:w-1/2 lg:w-1/3 m-2 md:m-5  overflow-hidden shadow-lg bg-zinc-800 ">
-        <img class="w-full h-56 object-cover" src="assets/Frame1.png" alt="Profile Image" />
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">React CRUD</div>
-          <p class="text-slate-200 text-base">
-            Data Management with React, Node, and MySQL
-          </p>
-        </div>
-        <div class="px-6 py-4 pb-6 flex justify-evenly">
-          <!-- <a href=""
-            class="bg-blue-900 hover:bg-blue-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-blue">
-            Demo
-          </a> -->
-          <a href="https://github.com/abhisheksahoo10/ReactMySQL-CURD" target="_blank" rel="noopener noreferrer"
-            class="bg-green-900 hover:bg-green-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-gray">
-            GitHub
-          </a>
-        </div>
-      </div>
-      <!-- 3rd project  -->
-      <div class="max-w-sm md:w-1/2 lg:w-1/3 m-2 md:m-5 overflow-hidden shadow-lg bg-zinc-800">
-        <img class="w-full h-56 object-cover" src="assets/Frame2.png" alt="Profile Image" />
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">Weather app</div>
-          <p class="text-slate-200 text-base">
-            Using HTML , CSS and JS with an API by openweathermap.org
-          </p>
-        </div>
-        <div class="px-6 py-4 pb-6 flex justify-evenly">
-          <a href="https://weather-app-by-abhishek10.netlify.app/"
-            class="bg-blue-900 hover:bg-blue-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-blue">
-            Demo
-          </a>
-          <a href="https://github.com/abhisheksahoo10/Websites" target="_blank" rel="noopener noreferrer"
-            class="bg-green-900 hover:bg-green-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-gray">
-            GitHub
-          </a>
-        </div>
-      </div>
-      <!-- 4th project  -->
-      <div class="max-w-sm md:w-1/2 lg:w-1/3  m-2 md:m-5 overflow-hidden shadow-lg bg-zinc-800">
-        <img class="w-full h-56 object-cover" src="assets/Frame3.png" alt="Profile Image" />
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">Tic-Tac-Toe</div>
-          <p class="text-slate-200 text-base">
-            Created using Java , Java Swing . <br>
-            Classic Edition
-          </p>
-        </div>
-        <div class="px-6 py-4 pb-6 flex justify-evenly">
-          <!-- <a href="" class="bg-blue-900 hover:bg-blue-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-blue">
-                  Demo
-                </a>  -->
-          <a href="https://github.com/abhisheksahoo10/Tic-Tac-Toe-Javaswing.git" target="_blank"
-            rel="noopener noreferrer"
-            class="bg-green-900 hover:bg-green-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-gray">
-            GitHub
-          </a>
-        </div>
-      </div>
-      
-    </div>
-    <div class='p-10 text-white'></div>
-  </section>
-  <section id="testimonial" class="px-10 py-16 bg-zinc-900 text-white">
-    <h2 class="text-2xl py-9 pb-4 font-bold text-center"></h2>
-    <h2 class="text-2xl font-bold text-gray-100 mb-6 text-center"></h2>
-    <div class="bg-gray-800 p-4 sm:py-9 md:py-16 lg:mx-20">
-      <div class="container mx-auto">
-        <div class="max-w-2xl mx-auto text-center">
-          <p class="text-gray-200 mb-8 mx-1 text-sm sm:text-base">
-            "As a tech enthusiast, I'm driven to learn and explore the dynamic world of development. My journey has
-            equipped me with technical skills and a passion for innovation in technology."
-          </p>
-          <div class="flex items-center justify-center ">
-            <img class="w-12 h-12 rounded-full object-cover sm:mr-4" src="assets/pic.jpeg" alt="Avatar" />
-            <div class="px-2 sm:px-0 ">
-              <p class="text-lg font-semibold text-gray-100 text-left">Abhishek Sahoo</p>
-              <p class="text-sm text-gray-200 text-left">Software Developer</p>
+
+  <section class="section__container portfolio__container" id="skills">
+    <h2 class="section__header">My Skills</h2>
+    <p class="section__description">
+      Proficient in a spectrum of programming languages including React, Node.js with Express, SQL, 
+      PHP with Yii framework, and skilled in frontend design with Tailwind CSS. 
+      Experienced in developing robust web applications and leveraging version control with Git and GitHub.
+      Crafted multiple innovative projects.
+    </p>
+    <div class="skill__grid">
+      <div class="skill__card">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/HTMLCSS.svg" alt="HTMLCSS" style="width: 80px;height: 80px;align-self: center;">
+            </div>
+            <div class="flip-card-back">
+              <p class="title">CSS3</p>
+              <p>HTML & CSS</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="about" class="px-10 pb-20  bg-black text-white">
-    <h2 class="text-2xl py-9 pb-4 font-bold text-left">About Me</h2>
-    <hr />
-    <div class='py-4 '>
-      <div class="">
-        <h3 class=''>Get in touch<br />
-          <span class='text-4xl font-semibold'>Contact Me</span>
-        </h3>
-        <div class='flex my-4'>
-          <a href="https://www.linkedin.com/in/abhishek-sahoo-5080x/" class="p-1 sm:p-2 mr-3 bg-gray-700 rounded-lg">
-            <img src="assets/in.svg" alt="" class="w-8 h-8 sm:w-10 sm:h-10 " />
-          </a>
-          <a href="mailto:abhisheksahoo2018@gmail.com" class="p-1 sm:p-2 mr-3 bg-gray-700 rounded-lg">
-            <img src="assets/gmail.svg" alt="" class="w-8 h-8 sm:w-10 sm:h-10 " />
-          </a>
-          <a href="https://wa.me/+917735644585" class="p-1 sm:p-2 mr-3 bg-gray-700 rounded-lg">
-            <img src="assets/whatsapp.svg" alt="" class="w-8 h-8 sm:w-10 sm:h-10 " />
-          </a>
-          <a href="https://www.instagram.com/abhishek.sibuly/" class="p-1 sm:p-2 mr-3 bg-gray-700 rounded-lg">
-            <img src="assets/instagram.svg" alt="" class="w-8 h-8 sm:w-10 sm:h-10 " />
-          </a>
-          <a href="https://twitter.com/Abhishek_1240" class="p-1 sm:p-2 mr-3 bg-gray-700 rounded-lg">
-            <img src="assets/Twitter X.svg" alt="" class="invert w-8 h-8 sm:w-10 sm:h-10 " />
-          </a>
+      <div class="skill__card">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/js.svg" alt="JS" style="width: 80px;height: 80px;align-self: center;">
+            </div>
+            <div class="flip-card-back">
+              <p class="title">JS</p>
+              <p>JavaScript ES6+</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div></div>
+      <div class="skill__card">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/react.svg" alt="react" style="width: 80px;height: 80px;align-self: center;">
+            </div>
+            <div class="flip-card-back">
+              <p class="title">React</p>
+              <p>JavaScript Library</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skill__card">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/node.svg" alt="node" style="width: 80px;height: 80px;align-self: center;">
+            </div>
+            <div class="flip-card-back">
+              <p class="title">Node JS</p>
+              <p>JS Environment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skill__card">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/tailwind.svg" alt="tailwind" style="width: 80px;height: 80px;align-self: center;">
+            </div>
+            <div class="flip-card-back">
+              <p class="title">Tailwind</p>
+              <p>for UI Design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skill__card">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/php.svg" alt="php" style="width: 80px;height: 80px;align-self: center;">
+            </div>
+            <div class="flip-card-back">
+              <p class="title">PHP</p>
+              <p>Yii framework</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="skill__card">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/java.svg" alt="java"
+                style="width: 80px;height: 80px;align-self: center;">
+            </div>
+            <div class="flip-card-back">
+              <p class="title">Java</p>
+              <p>Core Java</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skill__card">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/python.svg" alt="py" style="width: 80px;height: 80px;align-self: center;">
+            </div>
+            <div class="flip-card-back">
+              <p class="title">Python</p>
+              <p>Basic Python</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="skill__card">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="assets/c.svg" alt="c" style="width: 80px;height: 80px;align-self: center;">
+            </div>
+            <div class="flip-card-back">
+              <p class="title">C</p>
+              <p>programming</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
     </div>
   </section>
-  <script>
-    const links = document.querySelectorAll('a[href^="#"]');
 
-    links.forEach(link => {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      });
-    });
+  <section class="section__container portfolio__container" id="project">
+    <h2 class="section__header">My Projects</h2>
+    <p class="section__description">
+      Explore diverse projects showcasing my web development and design skills. Each one reflects my passion for crafting impactful digital experiences.
+    </p>
+    <div class="portfolio__grid">
+      <!-- <div class="portfolio__card">
+        <img src="assets/project-2.jpg" alt="portfolio" />
+      </div> -->
+      <a href="https://abhisheksahoo.vercel.app" target="_blank" class="card">
+        <img src="assets/React-portfolio.png" alt="pro">
+        <div class="card__content">
+          <p class="card__title">React-portfolio</p>
+          <p class="card__description">
+            A cutting-edge React portfolio that highlights my expertise, 
+            featuring animations with  and visually stunning designs. 
+            This portfolio is a testament to my ability to blend functionality with aesthetic appeal.<br>
+            <span>Technologies: React, Tailwind CSS, Framer Motion</span>
+          </p>
+        </div>
+      </a>
+      <a href="https://github.com/abhisheksahoo10/Virtual-HealthCare" class="card">
+        <img src="assets/VHealthcare.png" alt="v+">
+        <div class="card__content">
+          <p class="card__title">Virtual Healthcare</p>
+          <p class="card__description">
+            A full-stack application for seamless hospital appointment scheduling, 
+            enabling patients to book and manage appointments effortlessly while providing robust tools for hospital staff.
+            <br>Technologies: ReactJS, NodeJS, ExpressJS, MySQL
+          </p>
+        </div>
+      </a>
+      <a href="https://github.com/abhisheksahoo10/ReactMySQL-CURD" target="_blank" class="card">
+        <img src="assets/crud.png" alt="crud">
+        <div class="card__content">
+          <p class="card__title">React-CRUD</p>
+          <p class="card__description">
+            A full-stack CRUD app for efficient data management, 
+            built with React, Node.js, and MySQL, ensuring seamless data operations and user interactions.
+          </p>
+        </div>
+      </a>
+      <a href="https://weather-app-by-abhishek10.netlify.app" class="card">
+        <img src="assets/weatherapp.png" alt="weather">
+        <div class="card__content">
+          <p class="card__title">Weather App</p>
+          <p class="card__description">
+            A sleek weather app providing real-time temperature, humidity, and more 
+            for various locations, powered by the OpenWeatherMap API.
+            <br>Technology - HTML, CSS, JavaScript, OpenWeather (Weather API)
+          </p>
+        </div>
+      </a>
+      <a href="https://github.com/abhisheksahoo10/Tic-Tac-Toe-Javaswing" class="card">
+        <img src="assets/Tic-tac-toe.png" alt="java">
+        <div class="card__content">
+          <p class="card__title">Tic-Tac-Toe</p>
+          <p class="card__description">
+            classic edition Tic-Tac-Toe game created using Java and Java Swing
+          </p>
+        </div>
+      </a>
+      <a href="#" class="card">
+        <img src="assets/ProjectDesign.png" alt="ProjectDesign">
+        <div class="card__content">
+          <p class="card__title">Minimal Design</p>
+          <p class="card__description">
+            My offerings web design with a splash of minimalist flair and whimsical illustrations, 
+            making your online presence not just stylish but downright delightful!
+          </p>
+        </div>
+      </a>
+    </div>
+    <!-- <div class="portfolio__banner">
+        <div class="portfolio__banner__card">
+          <span><i class="ri-macbook-line"></i></span>
+          <h4>10+ Projects</h4>
+          <p>Done</p>
+        </div>
+        <div class="portfolio__banner__card">
+          <span><i class="ri-discuss-line"></i></span>
+          <h4>100+ DSA Problem</h4>
+          <p>Solved</p>
+        </div>
+        <div class="portfolio__banner__card">
+          <span><i class="ri-heart-fill"></i></span>
+          <h4>1000+ Views</h4>
+          <p>leetcode</p>
+        </div>
+      </div> -->
+  </section>
+  <!-- <form action="https://api.web3forms.com/submit" method="POST" class="emil_container"  id="contact">
+      <div class="email_box">
+        <div class="email_header">
+          <h1>Let's Talk With Me!</h1>
+        </div>
+        <input type="hidden" name="access_key" value="f1eeb203-8053-4d0e-bdca-670e2b1661b5">
+        <div class="email_detail_box">
+          <input type="text" name="name" class="email_detail_input" placeholder="Full Name" required>
+          <input type="email" name="email" class="email_detail_input" placeholder="Email Address">
+          <input type="text" name="number" class="email_detail_input" placeholder="Phone Number">
+          <input type="text" name="subject" class="email_detail_input" placeholder="Subject">
+        </div>
+        <div class="email_message_box">
+          <textarea name="message" rows="10" class="email_message_input" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="email_button_box">
+          <button  type="submit" class="email_button">Send Message</button>
+        </div>
+      </div>
+    </form> -->
 
-  </script>
+  <section class="section__container contact__container" id="contact">
+    <a href="#home"><img src="assets/icon.svg" class="logo nav__logo"></a>
+    <h3>Abhishek</h3>
+    <p class="section__description">
+      Explore my personal portfolio website and discover exciting opportunities for collaboration. Let's connect and
+      create something remarkable together!
+    </p>
+    <div class="contact__socials">
+      <a href="https://github.com/abhisheksahoo10" target="_blank"><i class="ri-github-line"></i></a>
+      <a href="https://www.linkedin.com/in/abhishek-sahoo-5080x" target="_blank"><i class="ri-linkedin-fill"></i></a>
+      <a href="mailto:abhisheksahoo2018@gmail.com"><i class="ri-mail-fill"></i></a>
+      <a href="https://wa.me/+917735644585"><i class="ri-whatsapp-fill"></i></a>
+      <!-- <a href=""><i class="ri-facebook-fill"></i></a> -->
+      <!-- <a href="https://www.instagram.com/abhishek.sibuly/"><i class="ri-instagram-fill"></i></a> -->
+      
+      <a href="https://twitter.com/Abhishek_1240" target="_blank"><i class="ri-twitter-x-line"></i></a>
+
+    </div>
+  </section>
+  <footer class="footer">
+    Copyright © 2024 Abhishek
+  </footer>
+  <!-- Java Script -->
+  <script src="index.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 
 </html>
